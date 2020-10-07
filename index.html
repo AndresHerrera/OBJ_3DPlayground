@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Obj3D Playground - Config params generator</title>
+		<style>
+			body { margin: 0; }
+			
+			canvas { width: 100%; height: 100% }
+			
+			#debug {
+			  position: absolute;
+			  left: 1em;
+			  top: 1em;
+			  padding: 1em;
+			  background: rgba(0, 0, 0, 0.8);
+			  color: white;
+			  font-family: monospace;
+			}
+			
+			textarea {
+			   font-size: 9px;
+			   display: none;
+			}
+
+		</style>
+	</head>
+	<body>
+		<script src="js/three.min.js"></script>
+		<script src="js/OrbitControls.js"></script>
+		<script src="js/OBJLoader.js"></script>
+		<script src="js/MTLLoader.js"></script>
+		<script src="js/dat.gui.min.js"></script>
+	
+	
+		<div id="debug">
+				  <div><hr width="120" align="left"/>CAMERA<hr width="120" align="left"/></div>
+				  <div>position x:<span id="cpx"></span></div>
+				  <div>position y:<span id="cpy"></span></div>
+				  <div>position z:<span id="cpz"></span></div>
+				  <div>rotation x:<span id="crx"></span></div>
+				  <div>rotation y:<span id="cry"></span></div>
+				  <div>rotation z:<span id="crz"></span></div>
+				  <div><hr width="120" align="left"/>OBJECT<hr width="120" align="left"/></div>
+				  <div>position x:<span id="opx"></span></div>
+				  <div>position y:<span id="opy"></span></div>
+				  <div>position z:<span id="opz"></span></div>
+				  <div>rotation x:<span id="orx"></span></div>
+				  <div>rotation y:<span id="ory"></span></div>
+				  <div>rotation z:<span id="orz"></span></div>
+				  <div><hr/></div>
+				  <div>	
+				<textarea id="filegenerated" name="filegenerated" rows="40" cols="65">
+				-- Config File not generated yet --
+				</textarea>
+				  </div>
+		</div>
+
+		
+		<script src="main.js"></script>
+
+	</body>
+</html>
